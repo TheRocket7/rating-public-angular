@@ -1,0 +1,25 @@
+h1, h2 {
+    font-weight: normal;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    text-align: left;
+}
+
+.settings {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-size {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center !important;
+}

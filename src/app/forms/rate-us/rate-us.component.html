@@ -1,0 +1,25 @@
+<div class="rate-us">
+    <div class="d-block text-center">
+        <h3>{{ title }}</h3>
+    </div>
+    <div *ngIf="changes">
+        <div class="row" *ngIf="changes.numberOfRates == 5">
+            <button type="button"><i class="fas fa-check-grin"></i></button>
+            <button type="button"><i class="fas fa-check-smile"></i></button>
+            <button type="button"><i class="fas fa-check-meh"></i></button>
+            <button type="button"><i class="fas fa-check-frown"></i></button>
+            <button type="button"><i class="fas fa-check-sad-tear"></i></button>
+        </div>
+        <div class="row" *ngIf="changes.numberOfRates == 4">
+            <button type="button"><i class="fas fa-check-grin"></i></button>
+            <button type="button"><i class="fas fa-check-smile"></i></button>
+            <button type="button"><i class="fas fa-check-meh"></i></button>
+            <button type="button"><i class="fas fa-check-sad-tear"></i></button>
+        </div>
+        <div class="row" *ngIf="changes.numberOfRates == 3">
+            <button type="button"><i class="fas fa-check-grin"></i></button>
+            <button type="button"><i class="fas fa-check-meh"></i></button>
+            <button type="button"><i class="fas fa-check-sad-tear"></i></button>
+        </div>
+    </div>
+</div>

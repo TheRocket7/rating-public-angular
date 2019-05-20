@@ -1,0 +1,15 @@
+<div class="settings">
+    <div class="option">
+        <label>{{ changeNumberOfRates }}</label>
+        <ngx-select-dropdown (change)="saveChanges()" [multiple]="false" [(ngModel)]="changes.numberOfRates" [options]="dropdownOptionsRates" class="col-xl-12"></ngx-select-dropdown>
+        </div>
+    <div class="option">
+        <label>{{ changeThanksText }}</label>
+        <input [(ngModel)]="changes.thanksMessage" (input)="saveChanges()" class="col-xl-12" />
+        <span *ngIf="showWarning" class="warning-message">Message need to be longer than 3 characters, and shorter than 120 characters!</span>
+    </div>
+    <div class="option">
+        <label>{{ changeModalWait }}</label>
+        <ngx-select-dropdown (change)="saveChanges()" [multiple]="false" [(ngModel)]="changes.modalWait" [options]="dropdownOptionsWait" class="col-xl-12"></ngx-select-dropdown>
+    </div>
+</div>
